@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 3</title>
+  </head>
+  <body style="margin: 0; padding: 0; background-color: white">
+    <header>
+      <span style="display: flex; justify-content: center; margin: 0 auto; background-color: grey">A web Page</span>
+      <nav style="display: flex; align-items: center; justify-content: left; padding: 10px 50px 20px 50px; background-color: gray">
+        <div style="display: flex; gap: 5px">
+          <a href=""><img src="assets/arrow_back.png" alt="" /></a>
+          <a href=""><img src="assets/arrow_forward.png" alt="" /></a>
+          <a href=""><img src="assets/close.png" alt="" /></a>
+          <a href=""><img src="assets/home.png" alt="" /></a>
+        </div>
+        <div style="margin: 5px 10px">
+          <input type="text" size="135" placeholder="http://" />
+        </div>
+
+        <div id="search" style="display: flex; align-items: center; width: 23px; height: 20px; background-color: white">
+          <a href="#"><img style="width: 20px; padding: 1px 0" src="assets/search.png" alt="search" /></a>
+          <input style="height: 15px; margin: 2px 0px 1px 0.3px; padding: 1.5px 0 0; border: 2px solid white" type="text" placeholder="search" size="4" />
+        </div>
+      </nav>
+    </header>
+
+    <div style="display: flex; width: 80%; height: 20px; background-color: white; border: 2px solid black; margin: 15px auto">
+      <ul style="display: flex; list-style: none; margin: 0 auto; padding: 0 15px 0px 30px; gap: 50px">
+        <li>
+          <a style="text-decoration: none; color: black; font-weight: bolder" href="">Home </a>
+          <a style="text-decoration: none; padding: 0 40px; color: black; font-weight: bolder" href=""> |</a>
+        </li>
+        <li>
+          <a style="text-decoration: none; color: black; font-weight: bolder" href="">Generate link </a>
+          <a style="text-decoration: none; padding: 0 40px; color: black; font-weight: bolder" href=""> |</a>
+        </li>
+        <li>
+          <a style="text-decoration: none; color: black; font-weight: bolder" href="">Transaction History </a>
+          <a style="text-decoration: none; padding: 0 40px; color: black; font-weight: bolder" href=""> |</a>
+        </li>
+        <li>
+          <a style="text-decoration: none; color: black; font-weight: bolder" href="">Policy </a>
+          <a style="text-decoration: none; padding: 0 40px; color: black; font-weight: bolder" href=""> |</a>
+        </li>
+        <li>
+          <a style="text-decoration: none; color: black; font-weight: bolder" href="">Logout </a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <div style="display: flex; padding: 10px 0px; margin: 0 200px">
+        <div style="margin: 0">
+          <img style="width: 200px; height: 100px; margin: 0 0 0 30px; padding: 0 0 0 0px; border: 2px solid rgb(46, 45, 45)" src="assets/macbook.jpg" alt="macbook" />
+          <br />
+          <input style="padding: 10px 0 0 30px" type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" />
+        </div>
+        <form action="formaction.html">
+          <table style="margin-right: 80px; margin-left: 0">
+            <tr>
+              <td style="padding-left: 80px">Title Here</td>
+              <td>:</td>
+              <td style="width: 100px; padding-left: 20px">
+                <input style="border: 2px solid black" type="text" value="MacBok Air $800" name="title" size="30" />
+              </td>
+            </tr>
+            <tr>
+              <td style="padding-left: 70px">Description</td>
+              <td>:</td>
+              <td style="padding-left: 20px">
+                <textarea style="border: 2px solid black" id="Description" cols="30" rows="5">
+  Year: 2009
+  Model:
+  Condition: Mint
+                </textarea>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left: 35px">Account Number</td>
+              <td>:</td>
+              <td style="padding-left: 20px"><input style="border: 2px solid black" type="text" name="account_number" value="123-456-789-0" size="30" /></td>
+            </tr>
+            <tr>
+              <td style="padding-left: 110px">Bank</td>
+              <td>:</td>
+              <td style="padding-left: 20px">
+                <select style="border: 2px solid black" id="bank">
+                  <option value="BNI">Bank BNI</option>
+                  <option value="BRI">Bank BRI</option>
+                  <option value="Cimbniaga">Bank Cimbniaga</option>
+                  <option value="Mandiri">Bank Mandiri</option>
+                  <option value="BCA">Bank BCA</option>
+                  <option value="BTN">Bank BTN</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left: 43px">Account Holder</td>
+              <td>:</td>
+              <td style="padding-left: 20px">
+                <input style="border: 2px solid black" type="text" value="Name Here" name="account_holder" />
+              </td>
+            </tr>
+
+            <tr>
+              <td style="padding-left: 70px">Transaction</td>
+              <td>:</td>
+              <td style="padding-left: 20px"><input type="number" min="1" max="3" name="transaction" value="1" style="width: 30px; border: 2px solid black" /></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td style="padding-left: 20px">* If the transaction is for 3 person, choose 3 from the drop-down list</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td style="padding-left: 20px">
+                <input style="color: green" type="checkbox" name="mobile" />
+                <label style="color: green" id="mobile">Send to mobile</label>
+              </td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td style="padding-left: 20px">
+                <input style="color: green" type="checkbox" id="email" name="email" />
+                <label style="color: green" for="email">Send to email</label>
+              </td>
+            </tr>
+
+            <tr style="padding-top: 50px">
+              <td style="padding: 10px 0">Send to Mobile Phone</td>
+              <td>:</td>
+              <td style="padding-left: 20px"><input style="border: 2px solid black" type="text" size="30" value="1234567890, 1234567891" /></td>
+            </tr>
+
+            <tr style="padding-top: 30px">
+              <td style="padding: 0 0px 0px 60px">Send to email</td>
+              <td>:</td>
+              <td style="padding-left: 20px"><input style="border: 2px solid black" type="email" size="30" name="email" value="syifasukmaramadhani@gmail.com" /></td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td></td>
+              <td style="padding: 30px 20px"><button style="background-color: green; color: white; border: 2px solid black">Generate Nabr Link</button></td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
