@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: pink;
+}
+
+body .container {
+  width: 1310px;
+  height: 560px;
+  border: 1px solid black;
+  margin: 27px 0 0 20px;
+}
+
+body .container header {
+  width: 100%;
+  height: 20%;
+  background-color: #3cdac5;
+}
+
+body .container header h2 {
+  text-align: center;
+  line-height: 120px;
+}
+
+body .container .tengah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60%;
+}
+
+body .container .tengah aside {
+  width: 50%;
+  background-color: #17725e;
+  text-align: center;
+  line-height: 300px;
+}
+
+body .container .tengah article {
+  width: 50%;
+  background-color: #f08e9e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .container .tengah article h2 {
+  margin: 125px auto 0 auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+body .container .tengah article ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .tengah article ul li {
+  display: inline-block;
+  list-style: none;
+  width: 100%;
+  height: 150px;
+  margin: 10px 10px 10px 10px;
+  background-color: grey;
+}
+
+body .container .tengah article ul li h1 {
+  text-align: center;
+  line-height: 150px;
+}
+
+body .container footer {
+  width: 100%;
+  height: 20%;
+  background-color: #3cdac5;
+  text-align: center;
+  line-height: 120px;
+}
+/*# sourceMappingURL=tugas63.css.map */
