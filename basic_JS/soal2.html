@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+    </style>
+    <script>
+      function kurs() {
+        let bil1 = Number(document.getElementById("masukan").value);
+        let bil2 = 1 * 14560;
+        let bil3 = bil1 * bil2;
+        document.getElementById("keluaran").value = bil3;
+      }
+    </script>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Menghitung Kurs Rupiah</legend>
+      <table>
+        <tr>
+          <th>Dollar</th>
+          <th>Value</th>
+          <th>Nilai Rupiah</th>
+        </tr>
+        <tr>
+          <th><input type="text" value="" id="masukan" /></th>
+          <th>
+            <button onclick="kurs()">Rupiah</button>
+          </th>
+          <th><input type="text" value="" id="keluaran" /></th>
+        </tr>
+      </table>
+    </fieldset>
+  </body>
+</html>
