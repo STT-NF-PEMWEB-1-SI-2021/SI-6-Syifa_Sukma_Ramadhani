@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <style>
+    .kotak_bawah {
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="kotak_bawah" id="kotak_bawah"></div>
+        <input type="text" id="chat" size="57px">
+        <input type="submit" id="kirim" onclick="chatan()">
+    </div>
+    <script>
+        function chatan(){
+            let pesan = document.getElementById("chat").value
+            document.getElementById("kotak_bawah").innerHTML += pesan + "</br>"
+        }
+    </script>
+</body>
+</html>

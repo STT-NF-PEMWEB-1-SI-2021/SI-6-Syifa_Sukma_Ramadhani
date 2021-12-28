@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .baru{
+      width: 540px;
+      height: 360px;
+    }
+  </style>
+  <body>
+    <select id="mySelect" onchange="myFunction()">
+      <option value="burung">Burung</option>
+      <option value="jerapah">Jerapah</option>
+      <option value="gajah">Gajah</option>
+      <option value="paus">Paus</option>
+      <option value="singa">Singa</option>
+    </select>
+    <div id="demo"></div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("mySelect").value;
+
+        if (x == "burung") {
+          burung = document.getElementById("demo").innerHTML = '<img class="baru" src="burung.jpg">'
+          window.alert("ini gambar " + x);
+        }
+
+        if (x == "jerapah") {
+          document.getElementById("demo").innerHTML = '<img class="baru" src="giraffe.jpg">'
+          window.alert("ini gambar " + x);
+        }
+
+        if (x == "gajah") {
+          document.getElementById("demo").innerHTML = '<img class="baru" src="elephant.jpg">'
+          window.alert("ini gambar " + x);
+        }
+
+        if (x == "singa") {
+          document.getElementById("demo").innerHTML = '<img class="baru" src="lion.jpg">'
+          window.alert("ini gambar " + x);
+        }
+
+        if (x == "paus") {
+          window.alert("ini gambar " + x);
+          document.getElementById("demo").innerHTML = '<img class="baru" src="paus.jpg">'
+        }
+      }
+    </script>
+  </body>
+</html>

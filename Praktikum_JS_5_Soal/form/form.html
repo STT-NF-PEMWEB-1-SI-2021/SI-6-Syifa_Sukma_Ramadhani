@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    span {
+      visibility: hidden;
+      color: red;
+    }
+  </style>
+  <body>
+    <label>Username:</label>
+    <input type="text" id="nama" placeholder="Silahkan Masukan Nama Anda" />
+    <span>Nama Tidak Boleh Kosong</span><br />
+    <br />
+    <label>Email:</label>
+    <input type="email" id="email" placeholder="Silahkan Masukan Email Anda" />
+    <span>Email Tidak Boleh Kosong</span><br />
+    <br />
+    <label>Jam Terbang:</label>
+    <input type="time" id="jam" placeholder="Silahkan Masukan Jam Terbang " />
+    <span>Harus diisi</span><br />
+    <br />
+    <label>Tujuan Berangkat :</label>
+    <input type="text" id="tujuan" placeholder="Silahkan Masukan Tujuan Berangkat" />
+    <span>Masukkan tujuan berangkat</span><br />
+    <br />
+    <label>Jumlah Tiket:</label>
+    <input type="number" id="tiket" placeholder="Silahkan Masukan jumlah Tiket" />
+    <span>Masukkan jumlah tiket</span><br />
+    <br />
+    <button onclick="cek_valid()">Submit</button>
+
+    <div>
+      <p id="total1"></p>
+      <p id="total2"></p>
+      <p id="total3"></p>
+      <p id="total4"></p>
+      <p id="total5"></p>
+    </div>
+
+    <script>
+      let nama = document.getElementById("nama");
+      let email = document.getElementById("email");
+      let jam = document.getElementById("jam");
+      let jumlah = document.getElementById("tujuan");
+      let tiket = document.getElementById("tiket");
+      let span = document.getElementsByTagName("span");
+
+      function cek_valid() {
+        if (nama.value == "" || nama.value.length >= 30) {
+          span[0].style.visibility = "visible";
+        } else {
+          document.getElementById("total1").innerHTML = "Nama :" + nama.value;
+        }
+
+        if (email.value == "") {
+          span[1].style.visibility = "visible";
+        } else {
+          document.getElementById("total2").innerHTML = "email : " + email.value;
+        }
+
+        if (jam.value == "") {
+          span[2].style.visibility = "visible";
+        } else {
+          document.getElementById("total3").innerHTML = "Jam berangkat : " + jam.value;
+        }
+
+        if (jumlah.value == "") {
+          span[3].style.visibility = "visible";
+        } else {
+          document.getElementById("total4").innerHTML = "Tujuan berangkat : " + jumlah.value;
+        }
+
+        if (tiket.value == "") {
+          span[4].style.visibility = "visible";
+        } else {
+          document.getElementById("total5").innerHTML = "Jumlah tiket : " + tiket.value;
+        }
+      }
+    </script>
+  </body>
+</html>
