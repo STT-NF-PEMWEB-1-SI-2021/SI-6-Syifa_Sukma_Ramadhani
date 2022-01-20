@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SIUMNI-Backend</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Theme style -->
+  <!-- <link rel="stylesheet" href="dist/css/adminlte.min.css"> -->
+  <link rel="stylesheet" href="dist/css/adminlte.css">
+  <style>
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #d5b895">
+    <!-- Brand Logo -->
+    <a href="#" class="brand-link">
+      <img src="#" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light" style="color: black;">SIUMNI-Backend</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar" >
+      <!-- Sidebar user (optional) -->
+    
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <i class="far fa-user fa-2x"></i>
+        </div>
+        <div class="info">
+          <a href="#" class="d-block" style="color: black;">Ahmad Admin</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search" >
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search" style="background-color: white;">
+          <div class="input-group-append" >
+            <button class="btn btn-sidebar" style="background-color:#686bac;">
+              <i class="fas fa-search fa-fw" style="color: white;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      
+
+<!-- Sidebar Menu -->
+<nav class="mt-2">
+  <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+    <!-- Add icons to the links using the .nav-icon class
+         with font-awesome or any other icon font library -->
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <!-- <i class="nav-icon fas fa-tachometer-alt"></i> -->
+        <p style="color: black;">
+          Dashboard <br> Alumni
+          <i class="right fas fa-angle-left"></i>
+        </p>
+      </a>
+      <ul class="nav nav-treeview">
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Dashboard v1</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Dashboard v2</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="far fa-circle nav-icon"></i>
+            <p>Dashboard v3</p>
+          </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <!-- <i class="nav-icon fas fa-th"></i> -->
+        <p style="color: black;">
+          Loker
+          <span></span>
+        </p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <!-- <i class="nav-icon fas fa-th"></i> -->
+        <p style="color: black;">
+          Mitra NF
+          <span></span>
+        </p>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">
+        <!-- <i class="nav-icon fas fa-th"></i> -->
+        <p style="color: black;">
+          Log Out
+          <span></span>
+        </p>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- /.sidebar-menu -->
+</div>
+<!-- /.sidebar -->
+</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" >
+    <!-- Content Header (Page header) -->
+    <section class="content-header" style="background-color: #ece3c6;">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>Data Mahasiswa</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Alumni ></a></li>
+             <!-- <li class="breadcrumb-item active"></li> -->
+            </ol>
+          </div>
+        </div>
+            <!-- /.form-group -->
+            <div class="form-group d-flex pt-4">
+              <label class="pr-3 py-2 pl-2">Angkatan :</label>
+              <select class="form-control select2" style="width: 10%;">
+                <option selected="selected">2021</option>
+                <option>2020</option>
+                <option>2019</option>
+                <option>2018</option>
+                <option>2017</option>
+              </select>
+            </div>
+      </div><!-- /.container-fluid -->
+ 
+    </section>
+
+    <!-- Main content -->
+    <section class="content" style="background-color: #ece3c6;">
+      <div class="container-fluid">
+        <div class="row">
+
+                <div class="row">
+                  <div class="col-lg-6">
+                 
+                    <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+                  <div class="col-lg-6">
+                    <div class="input-group">
+                     
+                 
+                    </div>
+                    <!-- /input-group -->
+                  </div>
+                  <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+                <!-- /input-group -->
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+            <!-- Horizontal Form -->
+            <div class="card card-info">
+              <div class="card-header" style="background-color: #d5b895">
+                <h3 class="card-title" style="color: black;">Daftarkan Alumni</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+              <form class="form-horizontal" style="background-color: #ece3c6;">
+                <div class="form-inline mx-4 mt-3">
+                  <div class="input-group" data-widget="sidebar-search" >
+                    <label for="inputPassword3">Cari Nama Alumni : </label>
+                    <input class="form-control form-control-sidebar ml-3" type="search" placeholder="Search" aria-label="Search" style="background-color:white;">
+                    <div class="input-group-append">
+                      <button class="btn btn-sidebar px-3" style="background-color: #686bac;">
+                        <i class="fas fa-search fa-fw" style="color: white;"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">Program Studi : </label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputprogramstudi" placeholder="Masukan Program Studi">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Tahun Masuk : </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputtahunmasuk" placeholder="Tahun Masuk Kuliah">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Tahun Lulus : </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputtahunlulus" placeholder="Tahun Lulus Kuliah">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Alamat Linkedin : </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputlinkedin" placeholder="Linkedin Anda">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Pekerjaan : </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputpekerjaan" placeholder="Pekerjaan Anda">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="inputPassword3" class="col-sm-2 col-form-label">Alamat Kantor : </label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputkantor" placeholder="Alamat Kantor Anda">
+                    </div>
+                  </div>
+                </div>
+                <!-- /.card-body -->
+                <div class="card-footer d-flex justify-content-center" style="background-color: #ece3c6;">
+                  <a href="../Tabel_SIUMNI/tables/tabel.html" target="_blank" class="btn btn-info" style="background-color: #686bac; color: white">Simpan</a>
+                </div>
+                <!-- /.card-footer -->
+              </form>
+            </div>
+            <!-- /.card -->
+
+          </div>
+       
+                  <!-- </div>
+                  <div class="form-group">
+                  </div> -->
+                </form>
+              </div>
+              <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+          </div>
+          <!--/.col (right) -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+  <div class="p-4 text- text-center" style="background-color: #d5b895;">
+    <p>Design by Mahasiswa STT-NF | Develop by Mahasiswa STT-NF | Copyright 2022</p>
+  </div>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- bs-custom-file-input -->
+<script src="../../plugins/bs-custom-file-input/bs-custom-file-input.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="../../dist/js/demo.js"></script>
+<!-- Page specific script -->
+<script>
+$(function () {
+  bsCustomFileInput.init();
+});
+</script>
+</body>
+</html>

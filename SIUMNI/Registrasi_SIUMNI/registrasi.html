@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registrasi User</title>
+
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+    <!-- icheck bootstrap -->
+    <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="dist/css/adminlte.min.css" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #ece3c6;
+      }
+
+      @media (max-width: 992px) {
+        img.foto {
+          width: 60px;
+        }
+      }
+      @media (min-width: 576px) {
+        img.foto {
+          width: 80px;
+        }
+      }
+
+      @media (min-width: 768px) {
+        img.foto {
+          width: 100px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigasi -->
+    <img src="dist/img/logo.png" class="foto img-fluid mt-3 ms-3 mb-1" alt="..." />
+    <nav class="navbar navbar-expand-lg navbar-light border-bottom-1 border-dark" style="background-color: #ece3c6; border-bottom: 1px solid black">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#"> SIUMNI STT-NF</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="nav navbar-nav navbar-left">
+            <li class="nav-item">
+              <a class="fw-bold" aria-current="page" href="#home" style="color: #686bac">Home</a>
+              <a class="fw-bold link-dark" aria-current="page" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="fw-bold ms-lg-2" href="#berita_alumni" style="color: #686bac">Berita</a>
+              <a class="fw-bold link-dark" aria-current="page" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="fw-bold ms-lg-2" href="#" style="color: #686bac">Loker</a>
+              <a class="fw-bold link-dark" aria-current="page" href="#">|</a>
+            </li>
+            <li class="nav-item">
+              <a class="fw-bold ms-lg-2" href="#" style="color: #686bac">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="hold-transition login-page" style="background-color: #ece3c6">
+      <div class="login-box">
+        <div class="login-logo">
+          <a><h2>Registrasi User</h2></a>
+        </div>
+        <div class="card" style="background-color: #d5b895">
+          <div class="card-body login-card-body" style="background-color: #d5b895">
+            <form>
+              <div class="input-group mb-3">
+                <p class="mr-2">Cari Alumni</p>
+                <input type="text" class="form-control" placeholder="Search" />
+                <div class="input-group-append" style="background-color: #686bac">
+                  <div class="input-group-text">
+                    <span class="fas fa-search" style="color: white"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <p style="margin-right: 51px">Nama</p>
+                <input type="text" class="form-control" placeholder="Nama Lengkap" />
+              </div>
+              <div class="input-group mb-3">
+                <p style="margin-right: 20px">Asal Prodi</p>
+                <input type="email" class="form-control" placeholder="Asal Prodi" />
+              </div>
+              <div class="input-group mb-3">
+                <p class="mr-3">Username</p>
+                <input type="email" class="form-control" placeholder="Username" />
+              </div>
+              <div class="input-group mb-3">
+                <p style="margin-right: 22px">Password</p>
+                <input type="password" class="form-control" placeholder="Password" />
+              </div>
+              <div class="input-group mb-3">
+                <p style="margin-right: 26px">Cek Pass</p>
+                <input type="password" class="form-control" placeholder="Cek Password" />
+              </div>
+              <div class="row text-center">
+                <!-- /.col -->
+                <div class="col-8">
+                  <label for="remember">
+                    <a href="../Form_Pendaftaran_SIUMNI/pendaftaran.html" target="blank_" class="btn btn-block ml-4" style="background-color: #686bac; color: white"><b>Daftar</b></a>
+                  </label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5 p-4 text-black text-center" style="background-color: #d5b895">
+      <p>Design by Mahasiswa STT-NF | Develop by Mahasiswa STT-NF | Copyright 2022</p>
+    </div>
+
+    <!-- jQuery -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="dist/js/adminlte.min.js"></script>
+  </body>
+</html>
